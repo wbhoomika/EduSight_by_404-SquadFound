@@ -1,0 +1,12 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#programsContent .cardsSection{
+    display: flex;
+    height: 80%;
+    justify-content: space-between;
+}
