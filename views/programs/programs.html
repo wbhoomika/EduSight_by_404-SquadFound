@@ -19,9 +19,9 @@
                 <span></span>
               </button>
               <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <ul class=" d-flex align-items-center navbar-nav ml-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="/views/landingPage/index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Scholarships</a>
@@ -32,6 +32,15 @@
                   <li class="nav-item">
                     <a class="nav-link ">Blog</a>
                   </li>
+                  <form action="/views/programs/programs.html" class="row ms-3">
+                    <div class=" d-flex align-items-center col-auto">
+                      <label for="inputPassword2" class="visually-hidden">Program Name</label>
+                      <input type="text" class="form-control" id="inputPassword2" placeholder="Search for other programs">
+                    </div>
+                    <div class=" d-flex align-items-center col-auto">
+                      <button  type="submit"  class="btn btn-primary ">Search</button>
+                    </div>
+                  </form>
                 </ul>
                   <button class="btn btn-outline-success" type="button">Login / Signup</button>
               </div>
@@ -39,10 +48,10 @@
           </nav>
     </header>
 
-    <section id="programsContent">
+    <section id="programsList">
         <div class="px-4 py-3 my-5 text-center">
 
-          <div class=" col-lg-3 mx-auto">
+          <!-- <div class=" col-lg-3 mx-auto">
             <form action="/views/programs/programs.html" class="row">
               <div class="col-auto">
                 <label for="inputPassword2" class="visually-hidden">Program Name</label>
@@ -53,10 +62,10 @@
               </div>
             </form>
           
-          </div>
+          </div> -->
 
             <h1 class="display-5 mt-5 fw-bold">Programs Related to Computer Science</h1>
-            <div class="col-lg-8 mx-auto mt-5">
+            <div class="col-lg-9 mx-auto mt-5">
 
               <div class="cardsSection">
                 <div class="card text-center" style="width: 18rem;">
@@ -64,7 +73,7 @@
                     <h5 class="card-title">Computer Science</h5>
                     <p class="card-text">Computer science is the study of algorithmic processes, computational machines and computation itself. </p>
                     <p class="card-text">Topic 1 | Topic 2 | Topic 3 | Topic 4 | Topic 5</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
+                    <a href="/views/programs/programInfo.html" class="btn btn-primary">View Details</a>
                   </div>
                 </div>
                 <div class="card text-center" style="width: 18rem;">
@@ -72,7 +81,7 @@
                     <h5 class="card-title">Computer Science</h5>
                     <p class="card-text">Computer science is the study of algorithmic processes, computational machines and computation itself. </p>
                     <p class="card-text">Topic 1 | Topic 2 | Topic 3 | Topic 4 | Topic 5</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
+                    <a href="/views/programs/programInfo.html" class="btn btn-primary">View Details</a>
                   </div>
                 </div>
                 <div class="card text-center" style="width: 18rem;">
@@ -80,7 +89,7 @@
                     <h5 class="card-title">Computer Science</h5>
                     <p class="card-text">Computer science is the study of algorithmic processes, computational machines and computation itself. </p>
                     <p class="card-text">Topic 1 | Topic 2 | Topic 3 | Topic 4 | Topic 5</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
+                    <a href="/views/programs/programInfo.html" class="btn btn-primary">View Details</a>
                   </div>
                 </div>
                 <div class="card text-center" style="width: 18rem;">
@@ -88,7 +97,7 @@
                     <h5 class="card-title">Computer Science</h5>
                     <p class="card-text">Computer science is the study of algorithmic processes, computational machines and computation itself. </p>
                     <p class="card-text">Topic 1 | Topic 2 | Topic 3 | Topic 4 | Topic 5</p>
-                    <a href="#" class="btn btn-primary ">View Details</a>
+                    <a href="/views/programs/programInfo.html" class="btn btn-primary ">View Details</a>
                   </div>
                 </div>
               </div>
@@ -98,111 +107,6 @@
             <button type="button" class="btn btn-outline-secondary mt-5">Show more programs</button>
           </div>
     </section>
-
-    <footer class="bg-dark text-center text-white">
-        <!-- Grid container -->
-        <div class="container p-4">
-          <!-- Section: Form -->
-          <section class="">
-            <form action="">
-              <!--Grid row-->
-              <div class="row d-flex justify-content-center">
-                <!--Grid column-->
-                <div class="col-auto">
-                  <p class="pt-2">
-                    <strong>Sign up for our newsletter</strong>
-                  </p>
-                </div>
-                <!--Grid column-->
-      
-                <!--Grid column-->
-                <div class="col-md-5 col-12">
-                  <!-- Email input -->
-                  <div class="form-outline form-white mb-4">
-                    <input type="email" id="form5Example21" class="form-control" />
-                    <label class="form-label" for="form5Example21">Email address</label>
-                  </div>
-                </div>
-                <!--Grid column-->
-      
-                <!--Grid column-->
-                <div class="col-auto">
-                  <!-- Submit button -->
-                  <button type="submit" class="btn btn-outline-light mb-4">
-                    Subscribe
-                  </button>
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row-->
-            </form>
-          </section>
-          <!-- Section: Form -->
-      
-          <!-- Section: Text -->
-          <section class="mb-4">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-              repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-              eum harum corrupti dicta, aliquam sequi voluptate quas.
-            </p>
-          </section>
-      
-          <!-- Section: Links -->
-          <section class="">
-            <!--Grid row-->
-            <div class="row">
-              <!--Grid column-->
-              <div class="col-lg-3 col-md-10 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Links</h5>
-      
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#!" class="text-white">About Us</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white">FAQs</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white">LOR</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white">SOPs</a>
-                  </li>
-                </ul>
-              </div>
-              <!--Grid column-->
-      
-              <!--Grid column-->
-              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">External Links</h5>
-      
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#!" class="text-white">What is GRE?</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white">What is TOEFL?</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white">What is IELTS?</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!--Grid row-->
-          </section>
-          <!-- Section: Links -->
-        </div>
-        <!-- Grid container -->
-      
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2021 Copyright
-        </div>
-        <!-- Copyright -->
-      </footer>
-
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
