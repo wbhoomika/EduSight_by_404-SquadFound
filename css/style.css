@@ -89,6 +89,11 @@ body{
     width: 80%;
 }
 
+/*User profile section*/
+.userProfile .shortlisted .card{
+    width: 20rem;
+}
+
 
 
 /*Forum Style*/
