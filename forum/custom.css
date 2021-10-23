@@ -1,105 +1,3 @@
-header{
-    position: fixed;
-    width: 100vw;
-    padding-right: 10px;
-    z-index: 10;
-}
-
-body{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-}
-
-
-
-/* Cards css */
-.card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 22rem;
-  }
-  
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-
-#programsList .cardsSection{
-    display: flex;
-    height: 80%;
-    justify-content: space-between;
-}
-
-.card-text{
-    margin: 1rem 0;
-}
-
-.topBadge{
-    position: absolute;
-    left: 0;
-    margin: 0px 15px;
-    background-color: #FEF4E3 !important;
-    color: #ff8700 !important;
-    font-size: 13px;
-}
-
-.watchlist{
-    position: absolute;
-    right: 0;
-    margin: 0px 15px;
-    /* background-color: #eeeeee !important;
-    border: 0.5px solid rgba(0, 0, 0, 0.295); */
-    color: #909090 !important;
-    font-size: 13px;
-}
-
-.watchlist:hover{
-    color: white !important;
-}
-
-
-
-/* Programs content page */
-
-.programsContent{
-    margin: 0 auto;
-    text-align: left;
-    width: 80%;
-}
-
-
-
-/*Forum Style*/
-
-
-.boxedcontainer		{	max-width: 1170px; margin:auto; padding:0px 30px;}
-
-/*********************************************
-	-	SETTINGS FOR BANNER CONTAINERS	-
-**********************************************/
-
-.tp-banner-container{
-	width:100%;
-	position:relative;
-	padding:0;
-
-}
-
-.tp-banner{
-	width:100%;
-	position:relative;
-}
-
-.tp-banner-fullscreen-container {
-		width:100%;
-		position:relative;
-		padding:0;
-}
-
-
 /*------------------------------------------------------------------
 [Table of contents]
 
@@ -153,11 +51,11 @@ a:hover {
 /*-----------------------------------------------------------------*/
 /*--- Footer ---*/
 
-/* footer {
+footer {
     height: 69px;
     line-height: 69px;
     color: #363838;
-} */
+}
 
 footer .logo {
     line-height: normal;
@@ -253,7 +151,7 @@ ul.socialicons li a:hover {
     height: 38px;
 }
 
-/* .avt button {
+.avt button {
     height: 38px;
     border: none;
     box-shadow: none;
@@ -275,7 +173,7 @@ ul.socialicons li a:hover {
     border: none;
     box-shadow: none;
 
-} */
+}
 
 .env {
     font-size: 18px;
@@ -523,7 +421,7 @@ td.chbox {
 /*--- Post --*/
 .post {
     background-color: #ffffff;
-
+    display: flex;
     border-radius: 2px;
     box-shadow: 0 1px 2px #c9cccd;
     margin-bottom: 20px;
@@ -806,7 +704,7 @@ a.down:hover {
 }
 
 
-/* 
+
 .btn-primary {
     background-color: #1abc9c;
     box-shadow: none;
@@ -825,7 +723,7 @@ a.down:hover {
     border: none;
     background-color: #20e1bb;
     box-shadow: none;
-} */
+}
 
 
 
@@ -1221,7 +1119,6 @@ a.down:hover {
     .container-fluid {
         padding: 0;
     }
-
 
     .post .userinfo {
         width: 15%;

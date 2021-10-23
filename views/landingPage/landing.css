@@ -1,0 +1,13 @@
+.carousel-background{
+    height: 30vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.carousel-background img{
+    border-radius: 50%;
+    border: none;
+}
