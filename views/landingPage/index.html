@@ -1,332 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EduSight</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="landing.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand"  href="/views/landingPage/index.html">EduSight</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-            <span></span>
-            <span></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-between"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="/views/landingPage/index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Scholarships</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/views/forum/forum.html">Forum</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Blog</a>
-              </li>
-            </ul>
-            <div>
-              <button type="button" class="btn btn-outline-light mx-2">
-                Notifications <span class="badge bg-secondary">4</span>
-              </button>
-              <button type="button" class="btn btn-outline-light position-relative mx-2 mx-4 ">
-                Inbox
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  99+
-                  <span class="visually-hidden">unread messages</span>
-                </span>
-              </button>
-              <a href="../userSpecific/userProfile.html"><button class="btn btn-primary me-4" type="button">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduSight</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="landing.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/views/landingPage/index.html">EduSight</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="/views/landingPage/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Scholarships</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/views/forum/forum.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Blog</a>
+            </li>
+          </ul>
+          <div>
+            <button type="button" class="btn btn-outline-light mx-2">
+              Notifications <span class="badge bg-secondary">4</span>
+            </button>
+            <button type="button" class="btn btn-outline-light position-relative mx-2 mx-4 ">
+              Inbox
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+            <a href="../userSpecific/userProfile.html"><button class="btn btn-primary me-4" type="button">
                 John Doe
               </button>
             </a>
-            </div>
-
           </div>
-        </div>
-      </nav>
-    </header>
 
-    <!-- search space -->
-    <section class="search-space">
-      <div class="px-4 pt-5 mt-5 text-center">
-        <h1 class="display-5 fw-bold" style="color: black">
-          Search For Programs
-        </h1>
-        <div class="col-lg-6 my-5 mx-auto">
-          <form action="../programs/programs.html" class="row ms-3">
-            <div class="row g-3 d-flex justify-content-center">
-              <div class="col-auto flex-grow-1">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputPassword2"
-                  placeholder="What are you looking for?"
-                />
-              </div>
-              <div class="col-auto">
-                <button type="submit" class="btn btn-primary mb-3">
-                  Search
-                </button>
-              </div>
-            </div>
-          </form>
-          <p class="lead my-4">
-            Quickly design and customize responsive mobile-first sites with
-            Bootstrap, the world’s most popular front-end open source toolkit,
-            featuring Sass variables and mixins, responsive grid system,
-            extensive prebuilt components, and powerful JavaScript plugins.
-          </p>
         </div>
       </div>
-    </section>
+    </nav>
+  </header>
 
-    <!-- testimonials -->
-    <section class="testimonials">
-      <div
-        id="carouselExampleDark"
-        class="carousel carousel-dark slide"
-        data-bs-ride="false"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <div class="carousel-background">
-              <img
-                src="/assets/faces/30.jpg"
-                class="img-fluid img-thumbnail"
-                alt=""
-              />
+  <!-- search space -->
+  <section class="search-space">
+    <div class="px-4 pt-5 mt-5 text-center">
+      <h1 class="display-5 fw-bold" style="color: black">
+        Search For Programs
+      </h1>
+      <div class="col-lg-6 my-5 mx-auto">
+        <form action="../programs/programs.html" class="row ms-3">
+          <div class="row g-3 d-flex justify-content-center">
+            <div class="col-auto flex-grow-1">
+              <input type="text" class="form-control" id="inputPassword2" placeholder="What are you looking for?" />
             </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-3">
+                Search
+              </button>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="carousel-background">
-              <img
-                src="/assets/faces/30.jpg"
-                class="img-fluid img-thumbnail"
-                alt=""
-              />
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-background">
-              <img
-                src="/assets/faces/30.jpg"
-                class="img-fluid img-thumbnail"
-                alt=""
-              />
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        </form>
+        <p class="lead my-4">
+          Quickly design and customize responsive mobile-first sites with
+          Bootstrap, the world’s most popular front-end open source toolkit,
+          featuring Sass variables and mixins, responsive grid system,
+          extensive prebuilt components, and powerful JavaScript plugins.
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer class="bg-dark text-center text-white">
-      <!-- Grid container -->
-      <div class="container p-4">
-        <section class="mb-4">
-          <p>
-            EduSight is a platform that helps students get more clarity about
-            their future in various programs
-          </p>
-        </section>
+  <!-- testimonials -->
+  <section class="testimonials">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="carousel-background">
+            <img src="/assets/faces/30.jpg" class="img-fluid img-thumbnail" alt="" />
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>
+              Some representative placeholder content for the first slide.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-background">
+            <img src="/assets/faces/30.jpg" class="img-fluid img-thumbnail" alt="" />
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>
+              Some representative placeholder content for the second slide.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-background">
+            <img src="/assets/faces/30.jpg" class="img-fluid img-thumbnail" alt="" />
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>
+              Some representative placeholder content for the third slide.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
 
-        <section class="">
-          <form action="">
-            <!--Grid row-->
-            <div class="row d-flex justify-content-center">
-              <!--Grid column-->
-              <div class="col-auto">
-                <p class="pt-2">
-                  <strong>Sign up for our newsletter</strong>
-                </p>
-              </div>
-              <!--Grid column-->
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <section class="mb-4">
+        <p>
+          EduSight is a platform that helps students get more clarity about
+          their future in various programs
+        </p>
+      </section>
 
-              <!--Grid column-->
-              <div class="col-md-5 col-12">
-                <!-- Email input -->
-                <div class="form-outline form-white mb-4">
-                  <input
-                    type="email"
-                    id="form5Example21"
-                    class="form-control"
-                    placeholder="Enter your mail id"
-                  />
-                </div>
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-auto">
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-outline-light mb-4">
-                  Subscribe
-                </button>
-              </div>
-              <!--Grid column-->
-            </div>
-            <!--Grid row-->
-          </form>
-        </section>
-
-        <section class="">
+      <section class="">
+        <form action="">
           <!--Grid row-->
-          <div class="row d-flex justify-content-around">
+          <div class="row d-flex justify-content-center">
             <!--Grid column-->
-            <div
-              class="
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" placeholder="Enter your mail id" />
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+
+      <section class="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-around">
+          <!--Grid column-->
+          <div class="
                 col-lg-3 col-md-10
                 mb-4 mb-md-0
                 d-flex
                 flex-column
                 justify-content-around
-              "
-            >
-              <h5 class="text-uppercase">Links</h5>
+              ">
+            <h5 class="text-uppercase">Links</h5>
 
-              <ul class="list-unstyled mb-0 ">
-                <li>
-                  <a href="#!" class="text-white text-decoration-none">About Us</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white text-decoration-none">FAQs</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white text-decoration-none">LOR</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white text-decoration-none">SOPs</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
+            <ul class="list-unstyled mb-0 ">
+              <li>
+                <a href="#!" class="text-white text-decoration-none">About Us</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white text-decoration-none">FAQs</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white text-decoration-none">LOR</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white text-decoration-none">SOPs</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
 
-            <!--Grid column-->
-            <div
-              class="
+          <!--Grid column-->
+          <div class="
                 col-lg-3 col-md-6
                 mb-4 mb-md-0
                 d-flex
                 flex-column
                 justify-content-between
-              "
-            >
-              <h5 class="text-uppercase">External Links</h5>
+              ">
+            <h5 class="text-uppercase">External Links</h5>
 
-              <ul class="list-unstyled mb-0 text-decoration-none">
-                <li>
-                  <a href="#!" class="text-white text-decoration-none">What is GRE?</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white text-decoration-none">What is TOEFL?</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white text-decoration-none">What is IELTS?</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="list-unstyled mb-0 text-decoration-none">
+              <li>
+                <a href="#!" class="text-white text-decoration-none">What is GRE?</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white text-decoration-none">What is TOEFL?</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white text-decoration-none">What is IELTS?</a>
+              </li>
+            </ul>
           </div>
-          <!--Grid row-->
-        </section>
-      </div>
+        </div>
+        <!--Grid row-->
+      </section>
+    </div>
 
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        Made with 💙 by Dhruv, Yasvi, Bhoomika and Vishvas
-      </div>
-      <!-- Copyright -->
-    </footer>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      Made with 💙 by Dhruv, Yasvi, Bhoomika and Vishvas
+    </div>
+    <!-- Copyright -->
+  </footer>
 
-    <!-- bootstrap js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

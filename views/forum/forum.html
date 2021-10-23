@@ -1,576 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EduSight</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/css/custom.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand"  href="/views/landingPage/index.html">EduSight</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-            <span></span>
-            <span></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-between"
-            id="navbarSupportedContent"
-          >
-            <ul
-              class="d-flex align-items-center navbar-nav ml-auto mb-2 mb-lg-0"
-            >
-              <li class="nav-item">
-                <a class="nav-link" href="/views/landingPage/index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Scholarships</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="/views/forum/forum.html">Forum</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Blog</a>
-              </li>
-              <form action="/views/programs/programs.html" class="row ms-3">
-                <div class="d-flex align-items-center col-auto">
-                  <label for="inputPassword2" class="visually-hidden"
-                    >Program Name</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="inputPassword2"
-                    placeholder="Search for other programs"
-                  />
-                </div>
-                <div class="d-flex align-items-center col-auto">
-                  <button type="submit" class="btn btn-primary">Search</button>
-                </div>
-              </form>
-            </ul>
-        </ul>
-        <div>
-          <button type="button" class="btn btn-outline-light mx-2">
-            Notifications <span class="badge bg-secondary">4</span>
-          </button>
-          <button type="button" class="btn btn-outline-light position-relative mx-2 mx-4 ">
-            Inbox
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-              99+
-              <span class="visually-hidden">unread messages</span>
-            </span>
-          </button>
-          <a href="../userSpecific/userProfile.html"><button class="btn btn-primary me-4" type="button">
-            John Doe
-          </button>
-        </a>
-        </div>
-          </div>
-        </div>
-      </nav>
-    </header>
 
-    <div class="pageMainContent">
-      <section class="programsContent">
-        <div class="px-4 py-3 my-5 text-left">
-          <div class="col-lg-9 mx-auto mt-5">
-            <!-- course details -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduSight</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/custom.css" />
+</head>
 
-            <h1 class="display-5 mt-5 fw-bold">Top Conversations</h1>
-
-            <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-md-8">
-                      <!-- POST -->
-                      <div class="post">
-                          <div class="wrap-ut pull-left">
-                              <div class="userinfo pull-left">
-                                  <div class="avatar">
-                                      <img src="../../assets/faces/50.jpg" class="img-fluid img-thumbnail"alt="">
-                                      <div class="status green">&nbsp;</div>
-                                  </div>
-
-                                  <div class="icons">
-                                      <img src="images/icon1.jpg" alt=""><img src="images/icon4.jpg" alt="">
-                                  </div>
-                              </div>
-                              <div class="posttext pull-left">
-                                  <h2><a href="02_topic.html">Can one work while studying overseas?
-                                  </a></h2>
-                                  <p>It depends on the length and type of program you will be attending. Your eligibility to work will be shown on the immigration stamp in your passport. International students are allowed to work for 20 hours per week during term days and full-time during holidays</p>
-                              </div>
-                              <div class="clearfix"></div>
-                          </div>
-                          <div class="postinfo pull-left">
-                              <div class="comments">
-                                  <div class="commentbg">
-                                      560
-                                      <div class="mark"></div>
-                                  </div>
-
-                              </div>
-                              <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                              <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>                                    
-                          </div>
-                          <div class="clearfix"></div>
-                      </div><!-- POST -->
-
-
-                      <!-- POST -->
-                      <div class="post">
-                          <div class="wrap-ut pull-left">
-                              <div class="userinfo pull-left">
-                                  <div class="avatar">
-                                      <img src="../../assets/faces/37.jpg" class="img-fluid img-thumbnail" alt="">
-                                      <div class="status red">&nbsp;</div>
-                                  </div>
-
-                                  <div class="icons">
-                                      <img src="images/icon3.jpg" alt=""><img src="images/icon4.jpg" alt=""><img src="images/icon5.jpg" alt=""><img src="images/icon6.jpg" alt="">
-                                  </div>
-                              </div>
-                              <div class="posttext pull-left">
-                                  <h2><a href="02_topic.html">What are Sandwich and Foundation programs?</a></h2>
-                                  <p>Sandwich programs are made-up of a combination of periods of study and time spent in Industry. The course duration extends to 4-years instead of the usual 3-years, for all bachelors’ courses. Foundation programs are of a 1-year length and are tailored for students as an alternative route to bridge between their qualification and that, which is required for entry into a degree program at the International University or College.p>
-                              </div>
-                              <div class="clearfix"></div>
-                          </div>
-                          <div class="postinfo pull-left">
-                              <div class="comments">
-                                  <div class="commentbg">
-                                      89
-                                      <div class="mark"></div>
-                                  </div>
-
-                              </div>
-                              <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                              <div class="time"><i class="fa fa-clock-o"></i> 15 min</div>                                    
-                          </div>
-                          <div class="clearfix"></div>
-                      </div><!-- POST -->
-
-
-                      <!-- POST -->
-                      <div class="post">
-                          <div class="wrap-ut pull-left">
-                              <div class="userinfo pull-left">
-                                  <div class="avatar">
-                                      <img src="../../assets/faces/55.jpg" class="img-fluid img-thumbnail" alt="">
-                                      <div class="status red">&nbsp;</div>
-                                  </div>
-
-                                  <div class="icons">
-                                      <img src="images/icon2.jpg" alt=""><img src="images/icon4.jpg" alt="">
-                                  </div>
-                              </div>
-                              <div class="posttext pull-left">
-                                  <h2><a href="02_topic.html">What are SFG's</a></h2>
-                                  <p>SFG is an initial used for Scholarships/Fellowship/Grants</p>
-                              </div>
-                              <div class="clearfix"></div>
-                          </div>
-                          <div class="postinfo pull-left">
-                              <div class="comments">
-                                  <div class="commentbg">
-                                      456
-                                      <div class="mark"></div>
-                                  </div>
-
-                              </div>
-                              <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                              <div class="time"><i class="fa fa-clock-o"></i> 2 days</div>                                    
-                          </div>
-                          <div class="clearfix"></div>
-                      </div><!-- POST -->
-
-
-                      <!-- POST -->
-                      <div class="post">
-                          <div class="wrap-ut pull-left">
-                              <div class="userinfo pull-left">
-                                  <div class="avatar">
-                                      <img src="../../assets/faces/70.jpg" class="img-fluid img-thumbnail" alt="">
-                                      <div class="status yellow">&nbsp;</div>
-                                  </div>
-
-                                  <div class="icons">
-                                      <img src="images/icon1.jpg" alt=""><img src="images/icon4.jpg" alt=""><img src="images/icon6.jpg" alt="">
-                                  </div>
-                              </div>
-                              <div class="posttext pull-left">
-                                  <h2><a href="02_topic.html">What documents do i need to present that I have permanent ties in India?</a></h2>
-                                  <p>Various documents can prove that you have permanent ties in India - namely property papers, job offer letters, awareness of the job market. But what will actually convince a Visa officer is your conviction. If you are not personally convinced that you need to come back to India, then it will be tough to prove it to somebody else as shrewd as a Visa officer.
-                                  </p>
-                              </div>
-                              <div class="clearfix"></div>
-                          </div>
-                          <div class="postinfo pull-left">
-                              <div class="comments">
-                                  <div class="commentbg">
-                                      78
-                                      <div class="mark"></div>
-                                  </div>
-
-                              </div>
-                              <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                              <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>                                    
-                          </div>
-                          <div class="clearfix"></div>
-                      </div><!-- POST -->
-
-
-
-                      <!-- POST -->
-                      <div class="post">
-                          <div class="wrap-ut pull-left">
-                              <div class="userinfo pull-left">
-                                  <div class="avatar">
-                                      <img src="../../assets/faces/50.jpg" class="img-fluid img-thumbnail"alt="">
-                                      <div class="status green">&nbsp;</div>
-                                  </div>
-
-                                  <div class="icons">
-                                      <img src="images/icon1.jpg" alt=""><img src="images/icon4.jpg" alt="">
-                                  </div>
-                              </div>
-                              <div class="posttext pull-left">
-                                  <h2><a href="02_topic.html">IELTS vs TOEFL
-                                  </a></h2>
-                                  <p>Often international students are confused between choosing IELTS or TOEFL, as universities abroad ask for either exam scores. It is up to you as a test taker to decide which of the two exams to take, but remember that IELTS is more preferred in the UK, Australia, and New Zealand, while TOEFL is popular among applicants to universities in US and Canada.
-                                  </p>
-                              </div>
-                              <div class="clearfix"></div>
-                          </div>
-                          <div class="postinfo pull-left">
-                              <div class="comments">
-                                  <div class="commentbg">
-                                      560
-                                      <div class="mark"></div>
-                                  </div>
-
-                              </div>
-                              <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                              <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>                                    
-                          </div>
-                          <div class="clearfix"></div>
-                      </div><!-- POST -->
-
-
-                      <!-- POST -->
-                      <div class="post">
-                          <div class="wrap-ut pull-left">
-                              <div class="userinfo pull-left">
-                                  <div class="avatar">
-                                      <img src="../../assets/faces/93.jpg" class="img-fluid img-thumbnail" alt="">
-                                      <div class="status red">&nbsp;</div>
-                                  </div>
-
-                                  <div class="icons">
-                                      <img src="images/icon3.jpg" alt=""><img src="images/icon4.jpg" alt=""><img src="images/icon5.jpg" alt=""><img src="images/icon6.jpg" alt="">
-                                  </div>
-                              </div>
-                              <div class="posttext pull-left">
-                                  <h2><a href="02_topic.html">What is SOP?
-                                  </a></h2>
-                                  <p>An SOP is a long essay required by universities abroad and nowadays some of the Indian universities during the application process. As the full form of SOP reveals, a Statement of Purpose is an essay stating the purpose of applying to a particular course in a particular university. This essay consists of a gist of who you are, who you want to become, and how ready you are to pursue a certain course in an institution.p>
-                              </div>
-                              <div class="clearfix"></div>
-                          </div>
-                          <div class="postinfo pull-left">
-                              <div class="comments">
-                                  <div class="commentbg">
-                                      89
-                                      <div class="mark"></div>
-                                  </div>
-
-                              </div>
-                              <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                              <div class="time"><i class="fa fa-clock-o"></i> 15 min</div>                                    
-                          </div>
-                          <div class="clearfix"></div>
-                      </div><!-- POST -->
-
-
-                      <!-- POST -->
-                      <div class="post">
-                          <div class="wrap-ut pull-left">
-                              <div class="userinfo pull-left">
-                                  <div class="avatar">
-                                      <img src="../../assets/faces/30.jpg" class="img-fluid img-thumbnail" alt="">
-                                      <div class="status red">&nbsp;</div>
-                                  </div>
-
-                                  <div class="icons">
-                                      <img src="images/icon2.jpg" alt=""><img src="images/icon4.jpg" alt="">
-                                  </div>
-                              </div>
-                              <div class="posttext pull-left">
-                                  <h2><a href="02_topic.html">What is a Letter of Recommendation (LOR)?
-                                  </a></h2>
-                                  <p>The LOR is a document that provides the admission officers with a comprehensive insight into your suitable candidature, for admission into the concerned University. The full form of LOR is a Letter of Recommendation. This letter aims at enabling the Admission officers to gain a clearer and favourable picture of your experience, achievements, contributions, and skills communicated by the recommender through the recommendation letter.
-                                    p>
-                              </div>
-                              <div class="clearfix"></div>
-                          </div>
-                          <div class="postinfo pull-left">
-                              <div class="comments">
-                                  <div class="commentbg">
-                                      456
-                                      <div class="mark"></div>
-                                  </div>
-
-                              </div>
-                              <div class="views"><i class="fa fa-eye"></i> 1,568</div>
-                              <div class="time"><i class="fa fa-clock-o"></i> 2 days</div>                                    
-                          </div>
-                          <div class="clearfix"></div>
-                      </div><!-- POST -->
-
-                  </div>
-                  <div class="col-lg-4 col-md-4">
-
-                      <!-- -->
-                      <div class="sidebarblock">
-                          <h3>Categories</h3>
-                          <div class="divline"></div>
-                          <div class="blocktxt">
-                              <ul class="cats">
-                                  <li><a href="#">Masters in Science <span class="badge pull-right">20</span></a></li>
-                                  <li><a href="#">Management <span class="badge pull-right">10</span></a></li>
-                                  <li><a href="#">Architecture <span class="badge pull-right">50</span></a></li>
-                                  <li><a href="#">Finance <span class="badge pull-right">36</span></a></li>
-                                  <li><a href="#">Engineering <span class="badge pull-right">41</span></a></li>
-                                  <li><a href="#">Arts and Cultural Studies <span class="badge pull-right">11</span></a></li>
-                                  <li><a href="#">Other <span class="badge pull-right">5</span></a></li>
-                              </ul>
-                          </div>
-                      </div>
-
-                      <!-- -->
-                      <div class="sidebarblock">
-                          <h3>Poll of the Week</h3>
-                          <div class="divline"></div>
-                          <div class="blocktxt">
-                              <p>Which program is the most desired by Indian graduates?</p>
-                              <form action="#" method="post" class="form">
-                                  <table class="poll">
-                                      <tbody><tr>
-                                          <td>
-                                              <div class="progress">
-                                                  <div class="progress-bar color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                                                      MS
-                                                  </div>
-                                              </div>
-                                          </td>
-                                          <td class="chbox">
-                                              <input id="opt1" type="radio" name="opt" value="1">  
-                                              <label for="opt1"></label>  
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="progress">
-                                                  <div class="progress-bar color2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 63%">
-                                                      MBA
-                                                  </div>
-                                              </div>
-                                          </td>
-                                          <td class="chbox">
-                                              <input id="opt2" type="radio" name="opt" value="2" checked="">  
-                                              <label for="opt2"></label>  
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="progress">
-                                                  <div class="progress-bar color3" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-                                                      Other
-                                                  </div>
-                                              </div>
-                                          </td>
-                                          <td class="chbox">
-                                              <input id="opt3" type="radio" name="opt" value="3">  
-                                              <label for="opt3"></label>  
-                                          </td>
-                                      </tr>
-                                  </tbody></table>
-                              </form>
-                              <p class="smal">Voting ends on 19th of October</p>
-                          </div>
-                      </div>
-
-                      <!-- -->
-                      <div class="sidebarblock">
-                          <h3>My Active Threads</h3>
-                          <div class="divline"></div>
-                          <div class="blocktxt">
-                              <a href="#">Admission Essays: What they are?</a>
-                          </div>
-                          <div class="divline"></div>
-                          <div class="blocktxt">
-                              <a href="#">University Accepting Admission This month</a>
-                          </div>
-                          <div class="divline"></div>
-                          <div class="blocktxt">
-                              <a href="#">What is the difference between GMAT and GRE?</a>
-                          </div>
-                          <div class="divline"></div>
-                      </div>
-
-
-                  </div>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/views/landingPage/index.html">EduSight</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+          <ul class="d-flex align-items-center navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/views/landingPage/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Scholarships</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/views/forum/forum.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Blog</a>
+            </li>
+            <form action="/views/programs/programs.html" class="row ms-3">
+              <div class="d-flex align-items-center col-auto">
+                <label for="inputPassword2" class="visually-hidden">Program Name</label>
+                <input type="text" class="form-control" id="inputPassword2" placeholder="Search for other programs" />
               </div>
-          </div>
-
+              <div class="d-flex align-items-center col-auto">
+                <button type="submit" class="btn btn-primary">Search</button>
+              </div>
+            </form>
+          </ul>
+          </ul>
+          <div>
+            <button type="button" class="btn btn-outline-light mx-2">
+              Notifications <span class="badge bg-secondary">4</span>
+            </button>
+            <button type="button" class="btn btn-outline-light position-relative mx-2 mx-4 ">
+              Inbox
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+            <a href="../userSpecific/userProfile.html"><button class="btn btn-primary me-4" type="button">
+                John Doe
+              </button>
+            </a>
           </div>
         </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="pageMainContent">
+    <section class="programsContent">
+      <div class="px-4 py-3 my-5 text-left">
+        <div class="col-lg-9 mx-auto mt-5">
+          <!-- course details -->
+
+          <h1 class="display-5 mt-5 fw-bold">Top Conversations</h1>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-md-8">
+                <!-- POST -->
+                <div class="post">
+                  <div class="wrap-ut pull-left">
+                    <div class="userinfo pull-left">
+                      <div class="avatar">
+                        <img src="../../assets/faces/50.jpg" class="img-fluid img-thumbnail" alt="">
+                        <div class="status green">&nbsp;</div>
+                      </div>
+
+                      <div class="icons">
+                        <img src="images/icon1.jpg" alt=""><img src="images/icon4.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="posttext pull-left">
+                      <h2><a href="02_topic.html">Can one work while studying overseas?
+                        </a></h2>
+                      <p>It depends on the length and type of program you will be attending. Your eligibility to work
+                        will be shown on the immigration stamp in your passport. International students are allowed to
+                        work for 20 hours per week during term days and full-time during holidays</p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="postinfo pull-left">
+                    <div class="comments">
+                      <div class="commentbg">
+                        560
+                        <div class="mark"></div>
+                      </div>
+
+                    </div>
+                    <div class="views"><i class="fa fa-eye"></i> 1,568</div>
+                    <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div><!-- POST -->
+
+
+                <!-- POST -->
+                <div class="post">
+                  <div class="wrap-ut pull-left">
+                    <div class="userinfo pull-left">
+                      <div class="avatar">
+                        <img src="../../assets/faces/37.jpg" class="img-fluid img-thumbnail" alt="">
+                        <div class="status red">&nbsp;</div>
+                      </div>
+
+                      <div class="icons">
+                        <img src="images/icon3.jpg" alt=""><img src="images/icon4.jpg" alt=""><img
+                          src="images/icon5.jpg" alt=""><img src="images/icon6.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="posttext pull-left">
+                      <h2><a href="02_topic.html">What are Sandwich and Foundation programs?</a></h2>
+                      <p>Sandwich programs are made-up of a combination of periods of study and time spent in Industry.
+                        The course duration extends to 4-years instead of the usual 3-years, for all bachelors’ courses.
+                        Foundation programs are of a 1-year length and are tailored for students as an alternative route
+                        to bridge between their qualification and that, which is required for entry into a degree
+                        program at the International University or College.p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="postinfo pull-left">
+                    <div class="comments">
+                      <div class="commentbg">
+                        89
+                        <div class="mark"></div>
+                      </div>
+
+                    </div>
+                    <div class="views"><i class="fa fa-eye"></i> 1,568</div>
+                    <div class="time"><i class="fa fa-clock-o"></i> 15 min</div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div><!-- POST -->
+
+
+                <!-- POST -->
+                <div class="post">
+                  <div class="wrap-ut pull-left">
+                    <div class="userinfo pull-left">
+                      <div class="avatar">
+                        <img src="../../assets/faces/55.jpg" class="img-fluid img-thumbnail" alt="">
+                        <div class="status red">&nbsp;</div>
+                      </div>
+
+                      <div class="icons">
+                        <img src="images/icon2.jpg" alt=""><img src="images/icon4.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="posttext pull-left">
+                      <h2><a href="02_topic.html">What are SFG's</a></h2>
+                      <p>SFG is an initial used for Scholarships/Fellowship/Grants</p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="postinfo pull-left">
+                    <div class="comments">
+                      <div class="commentbg">
+                        456
+                        <div class="mark"></div>
+                      </div>
+
+                    </div>
+                    <div class="views"><i class="fa fa-eye"></i> 1,568</div>
+                    <div class="time"><i class="fa fa-clock-o"></i> 2 days</div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div><!-- POST -->
+
+
+                <!-- POST -->
+                <div class="post">
+                  <div class="wrap-ut pull-left">
+                    <div class="userinfo pull-left">
+                      <div class="avatar">
+                        <img src="../../assets/faces/70.jpg" class="img-fluid img-thumbnail" alt="">
+                        <div class="status yellow">&nbsp;</div>
+                      </div>
+
+                      <div class="icons">
+                        <img src="images/icon1.jpg" alt=""><img src="images/icon4.jpg" alt=""><img
+                          src="images/icon6.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="posttext pull-left">
+                      <h2><a href="02_topic.html">What documents do i need to present that I have permanent ties in
+                          India?</a></h2>
+                      <p>Various documents can prove that you have permanent ties in India - namely property papers, job
+                        offer letters, awareness of the job market. But what will actually convince a Visa officer is
+                        your conviction. If you are not personally convinced that you need to come back to India, then
+                        it will be tough to prove it to somebody else as shrewd as a Visa officer.
+                      </p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="postinfo pull-left">
+                    <div class="comments">
+                      <div class="commentbg">
+                        78
+                        <div class="mark"></div>
+                      </div>
+
+                    </div>
+                    <div class="views"><i class="fa fa-eye"></i> 1,568</div>
+                    <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div><!-- POST -->
+
+
+
+                <!-- POST -->
+                <div class="post">
+                  <div class="wrap-ut pull-left">
+                    <div class="userinfo pull-left">
+                      <div class="avatar">
+                        <img src="../../assets/faces/50.jpg" class="img-fluid img-thumbnail" alt="">
+                        <div class="status green">&nbsp;</div>
+                      </div>
+
+                      <div class="icons">
+                        <img src="images/icon1.jpg" alt=""><img src="images/icon4.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="posttext pull-left">
+                      <h2><a href="02_topic.html">IELTS vs TOEFL
+                        </a></h2>
+                      <p>Often international students are confused between choosing IELTS or TOEFL, as universities
+                        abroad ask for either exam scores. It is up to you as a test taker to decide which of the two
+                        exams to take, but remember that IELTS is more preferred in the UK, Australia, and New Zealand,
+                        while TOEFL is popular among applicants to universities in US and Canada.
+                      </p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="postinfo pull-left">
+                    <div class="comments">
+                      <div class="commentbg">
+                        560
+                        <div class="mark"></div>
+                      </div>
+
+                    </div>
+                    <div class="views"><i class="fa fa-eye"></i> 1,568</div>
+                    <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div><!-- POST -->
+
+
+                <!-- POST -->
+                <div class="post">
+                  <div class="wrap-ut pull-left">
+                    <div class="userinfo pull-left">
+                      <div class="avatar">
+                        <img src="../../assets/faces/93.jpg" class="img-fluid img-thumbnail" alt="">
+                        <div class="status red">&nbsp;</div>
+                      </div>
+
+                      <div class="icons">
+                        <img src="images/icon3.jpg" alt=""><img src="images/icon4.jpg" alt=""><img
+                          src="images/icon5.jpg" alt=""><img src="images/icon6.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="posttext pull-left">
+                      <h2><a href="02_topic.html">What is SOP?
+                        </a></h2>
+                      <p>An SOP is a long essay required by universities abroad and nowadays some of the Indian
+                        universities during the application process. As the full form of SOP reveals, a Statement of
+                        Purpose is an essay stating the purpose of applying to a particular course in a particular
+                        university. This essay consists of a gist of who you are, who you want to become, and how ready
+                        you are to pursue a certain course in an institution.p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="postinfo pull-left">
+                    <div class="comments">
+                      <div class="commentbg">
+                        89
+                        <div class="mark"></div>
+                      </div>
+
+                    </div>
+                    <div class="views"><i class="fa fa-eye"></i> 1,568</div>
+                    <div class="time"><i class="fa fa-clock-o"></i> 15 min</div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div><!-- POST -->
+
+
+                <!-- POST -->
+                <div class="post">
+                  <div class="wrap-ut pull-left">
+                    <div class="userinfo pull-left">
+                      <div class="avatar">
+                        <img src="../../assets/faces/30.jpg" class="img-fluid img-thumbnail" alt="">
+                        <div class="status red">&nbsp;</div>
+                      </div>
+
+                      <div class="icons">
+                        <img src="images/icon2.jpg" alt=""><img src="images/icon4.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="posttext pull-left">
+                      <h2><a href="02_topic.html">What is a Letter of Recommendation (LOR)?
+                        </a></h2>
+                      <p>The LOR is a document that provides the admission officers with a comprehensive insight into
+                        your suitable candidature, for admission into the concerned University. The full form of LOR is
+                        a Letter of Recommendation. This letter aims at enabling the Admission officers to gain a
+                        clearer and favourable picture of your experience, achievements, contributions, and skills
+                        communicated by the recommender through the recommendation letter.
+                        p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="postinfo pull-left">
+                    <div class="comments">
+                      <div class="commentbg">
+                        456
+                        <div class="mark"></div>
+                      </div>
+
+                    </div>
+                    <div class="views"><i class="fa fa-eye"></i> 1,568</div>
+                    <div class="time"><i class="fa fa-clock-o"></i> 2 days</div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div><!-- POST -->
+
+              </div>
+              <div class="col-lg-4 col-md-4">
+
+                <!-- -->
+                <div class="sidebarblock">
+                  <h3>Categories</h3>
+                  <div class="divline"></div>
+                  <div class="blocktxt">
+                    <ul class="cats">
+                      <li><a href="#">Masters in Science <span class="badge pull-right">20</span></a></li>
+                      <li><a href="#">Management <span class="badge pull-right">10</span></a></li>
+                      <li><a href="#">Architecture <span class="badge pull-right">50</span></a></li>
+                      <li><a href="#">Finance <span class="badge pull-right">36</span></a></li>
+                      <li><a href="#">Engineering <span class="badge pull-right">41</span></a></li>
+                      <li><a href="#">Arts and Cultural Studies <span class="badge pull-right">11</span></a></li>
+                      <li><a href="#">Other <span class="badge pull-right">5</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- -->
+                <div class="sidebarblock">
+                  <h3>Poll of the Week</h3>
+                  <div class="divline"></div>
+                  <div class="blocktxt">
+                    <p>Which program is the most desired by Indian graduates?</p>
+                    <form action="#" method="post" class="form">
+                      <table class="poll">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="progress">
+                                <div class="progress-bar color1" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                  aria-valuemax="100" style="width: 90%">
+                                  MS
+                                </div>
+                              </div>
+                            </td>
+                            <td class="chbox">
+                              <input id="opt1" type="radio" name="opt" value="1">
+                              <label for="opt1"></label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="progress">
+                                <div class="progress-bar color2" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                  aria-valuemax="100" style="width: 63%">
+                                  MBA
+                                </div>
+                              </div>
+                            </td>
+                            <td class="chbox">
+                              <input id="opt2" type="radio" name="opt" value="2" checked="">
+                              <label for="opt2"></label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="progress">
+                                <div class="progress-bar color3" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                  aria-valuemax="100" style="width: 75%">
+                                  Other
+                                </div>
+                              </div>
+                            </td>
+                            <td class="chbox">
+                              <input id="opt3" type="radio" name="opt" value="3">
+                              <label for="opt3"></label>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </form>
+                    <p class="smal">Voting ends on 19th of October</p>
+                  </div>
+                </div>
+
+                <!-- -->
+                <div class="sidebarblock">
+                  <h3>My Active Threads</h3>
+                  <div class="divline"></div>
+                  <div class="blocktxt">
+                    <a href="#">Admission Essays: What they are?</a>
+                  </div>
+                  <div class="divline"></div>
+                  <div class="blocktxt">
+                    <a href="#">University Accepting Admission This month</a>
+                  </div>
+                  <div class="divline"></div>
+                  <div class="blocktxt">
+                    <a href="#">What is the difference between GMAT and GRE?</a>
+                  </div>
+                  <div class="divline"></div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <section class="mb-4">
+        <p>
+          EduSight is a platform that helps students get more clarity about
+          their future in various programs
+        </p>
       </section>
 
-    </div>
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
 
-    <footer class="bg-dark text-center text-white">
-        <!-- Grid container -->
-        <div class="container p-4">
-          <section class="mb-4">
-            <p>
-              EduSight is a platform that helps students get more clarity about
-              their future in various programs
-            </p>
-          </section>
-  
-          <section class="">
-            <form action="">
-              <!--Grid row-->
-              <div class="row d-flex justify-content-center">
-                <!--Grid column-->
-                <div class="col-auto">
-                  <p class="pt-2">
-                    <strong>Sign up for our newsletter</strong>
-                  </p>
-                </div>
-                <!--Grid column-->
-  
-                <!--Grid column-->
-                <div class="col-md-5 col-12">
-                  <!-- Email input -->
-                  <div class="form-outline form-white mb-4">
-                    <input
-                      type="email"
-                      id="form5Example21"
-                      class="form-control"
-                      placeholder="Enter your mail id"
-                    />
-                  </div>
-                </div>
-                <!--Grid column-->
-  
-                <!--Grid column-->
-                <div class="col-auto">
-                  <!-- Submit button -->
-                  <button type="submit" class="btn btn-outline-light mb-4">
-                    Subscribe
-                  </button>
-                </div>
-                <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" placeholder="Enter your mail id" />
               </div>
-              <!--Grid row-->
-            </form>
-          </section>
-  
-          <section class="">
-            <!--Grid row-->
-            <div class="row d-flex justify-content-around">
-              <!--Grid column-->
-              <div
-                class="
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+
+      <section class="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-around">
+          <!--Grid column-->
+          <div class="
                   col-lg-3 col-md-10
                   mb-4 mb-md-0
                   d-flex
                   flex-column
                   justify-content-around
-                "
-              >
-                <h5 class="text-uppercase">Links</h5>
-  
-                <ul class="list-unstyled mb-0 ">
-                  <li>
-                    <a href="#!" class="text-white text-decoration-none">About Us</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white text-decoration-none">FAQs</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white text-decoration-none">LOR</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white text-decoration-none">SOPs</a>
-                  </li>
-                </ul>
-              </div>
-              <!--Grid column-->
-  
-              <!--Grid column-->
-              <div
-                class="
+                ">
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled mb-0 ">
+              <li>
+                <a href="#!" class="text-white text-decoration-none">About Us</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white text-decoration-none">FAQs</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white text-decoration-none">LOR</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white text-decoration-none">SOPs</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="
                   col-lg-3 col-md-6
                   mb-4 mb-md-0
                   d-flex
                   flex-column
                   justify-content-between
-                "
-              >
-                <h5 class="text-uppercase">External Links</h5>
-  
-                <ul class="list-unstyled mb-0 text-decoration-none">
-                  <li>
-                    <a href="#!" class="text-white text-decoration-none">What is GRE?</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white text-decoration-none">What is TOEFL?</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white text-decoration-none">What is IELTS?</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!--Grid row-->
-          </section>
-        </div>
-  
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-          Made with 💙 by Dhruv, Yasvi, Bhoomika and Vishwas
-        </div>
-        <!-- Copyright -->
-      </footer>
+                ">
+            <h5 class="text-uppercase">External Links</h5>
 
-    <!-- bootstrap js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+            <ul class="list-unstyled mb-0 text-decoration-none">
+              <li>
+                <a href="#!" class="text-white text-decoration-none">What is GRE?</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white text-decoration-none">What is TOEFL?</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white text-decoration-none">What is IELTS?</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Grid row-->
+      </section>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      Made with 💙 by Dhruv, Yasvi, Bhoomika and Vishwas
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
