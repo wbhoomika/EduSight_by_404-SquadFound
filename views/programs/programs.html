@@ -15,7 +15,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">EduSight</a>
+        <a class="navbar-brand ms-3" href="#">EduSight</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
               <a class="nav-link" href="/views/forum/forum.html">Forum</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link ">Blog</a>
+              <a class="nav-link " data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon!" style="cursor:default;" >Blog</a>
             </li>
             <form action="/views/programs/programs.html" class="row ms-3">
               <div class=" d-flex align-items-center col-auto">
@@ -193,7 +193,12 @@
             <div class="col-md-5 col-12">
               <!-- Email input -->
               <div class="form-outline form-white mb-4">
-                <input type="email" id="form5Example21" class="form-control" placeholder="Enter your mail id" />
+                <input
+                  type="email"
+                  id="form5Example21"
+                  class="form-control"
+                  placeholder="Enter your mail id"
+                />
               </div>
             </div>
             <!--Grid column-->
@@ -211,70 +216,16 @@
         </form>
       </section>
 
-      <section class="">
-        <!--Grid row-->
-        <div class="row d-flex justify-content-around">
-          <!--Grid column-->
-          <div class="
-                col-lg-3 col-md-10
-                mb-4 mb-md-0
-                d-flex
-                flex-column
-                justify-content-around
-              ">
-            <h5 class="text-uppercase">Links</h5>
 
-            <ul class="list-unstyled mb-0 ">
-              <li>
-                <a href="#!" class="text-white text-decoration-none">About Us</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white text-decoration-none">FAQs</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white text-decoration-none">LOR</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white text-decoration-none">SOPs</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="
-                col-lg-3 col-md-6
-                mb-4 mb-md-0
-                d-flex
-                flex-column
-                justify-content-between
-              ">
-            <h5 class="text-uppercase">External Links</h5>
-
-            <ul class="list-unstyled mb-0 text-decoration-none">
-              <li>
-                <a href="#!" class="text-white text-decoration-none">What is GRE?</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white text-decoration-none">What is TOEFL?</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white text-decoration-none">What is IELTS?</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!--Grid row-->
-      </section>
     </div>
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      Made with 💙 by <a href="">Dhruv </a>, <a href=""> Yasvi </a>, <a href=""> Bhoomika </a> and <a href=""> Vishwas
-      </a>
+      Made with 💙 by Dhruv, Yasvi, Bhoomika and Vishvas
     </div>
     <!-- Copyright -->
   </footer>
+
 
   <!-- bootstrap js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

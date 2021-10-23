@@ -20,7 +20,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand"  href="/views/landingPage/index.html">EduSight</a>
+          <a class="navbar-brand ms-3"  href="/views/landingPage/index.html">EduSight</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -47,7 +47,7 @@
                 <a class="nav-link" href="/views/forum/forum.html">Forum</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Blog</a>
+                <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon!" style="cursor:default;" >Blog</a>
               </li>
               <form action="/views/programs/programs.html" class="row ms-3">
                 <div class="d-flex align-items-center col-auto">
@@ -218,7 +218,7 @@
                       <a  class="nav-link"  href="./collegeAnalysisScore.html">Based on Score</a>
                     </li>
                     <li class="nav-item">
-                      <a  class="nav-link " href="./collegeComparison.html">Comparison</a>
+                      <a  class="nav-link " href="./collegeComparison.html">Summary</a>
                     </li>
 
                   </ul>
@@ -230,6 +230,8 @@
                 </div>
   
                 <div id="analysisCards" style="margin: 40px;">
+
+                  <h2>Statistical Analysis of watchlisted programs</h2>
 
                   <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
@@ -286,121 +288,64 @@
     </div>
 
     <footer class="bg-dark text-center text-white">
-        <!-- Grid container -->
-        <div class="container p-4">
-          <section class="mb-4">
-            <p>
-              EduSight is a platform that helps students get more clarity about
-              their future in various programs
-            </p>
-          </section>
-  
-          <section class="">
-            <form action="">
-              <!--Grid row-->
-              <div class="row d-flex justify-content-center">
-                <!--Grid column-->
-                <div class="col-auto">
-                  <p class="pt-2">
-                    <strong>Sign up for our newsletter</strong>
-                  </p>
-                </div>
-                <!--Grid column-->
-  
-                <!--Grid column-->
-                <div class="col-md-5 col-12">
-                  <!-- Email input -->
-                  <div class="form-outline form-white mb-4">
-                    <input
-                      type="email"
-                      id="form5Example21"
-                      class="form-control"
-                      placeholder="Enter your mail id"
-                    />
-                  </div>
-                </div>
-                <!--Grid column-->
-  
-                <!--Grid column-->
-                <div class="col-auto">
-                  <!-- Submit button -->
-                  <button type="submit" class="btn btn-outline-light mb-4">
-                    Subscribe
-                  </button>
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row-->
-            </form>
-          </section>
-  
-          <section class="">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <section class="mb-4">
+          <p>
+            EduSight is a platform that helps students get more clarity about
+            their future in various programs
+          </p>
+        </section>
+
+        <section class="">
+          <form action="">
             <!--Grid row-->
-            <div class="row d-flex justify-content-around">
+            <div class="row d-flex justify-content-center">
               <!--Grid column-->
-              <div
-                class="
-                  col-lg-3 col-md-10
-                  mb-4 mb-md-0
-                  d-flex
-                  flex-column
-                  justify-content-around
-                "
-              >
-                <h5 class="text-uppercase">Links</h5>
-  
-                <ul class="list-unstyled mb-0 ">
-                  <li>
-                    <a href="#!" class="text-white text-decoration-none">About Us</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white text-decoration-none">FAQs</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white text-decoration-none">LOR</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white text-decoration-none">SOPs</a>
-                  </li>
-                </ul>
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
               </div>
               <!--Grid column-->
-  
+
               <!--Grid column-->
-              <div
-                class="
-                  col-lg-3 col-md-6
-                  mb-4 mb-md-0
-                  d-flex
-                  flex-column
-                  justify-content-between
-                "
-              >
-                <h5 class="text-uppercase">External Links</h5>
-  
-                <ul class="list-unstyled mb-0 text-decoration-none">
-                  <li>
-                    <a href="#!" class="text-white text-decoration-none">What is GRE?</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white text-decoration-none">What is TOEFL?</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white text-decoration-none">What is IELTS?</a>
-                  </li>
-                </ul>
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="email"
+                    id="form5Example21"
+                    class="form-control"
+                    placeholder="Enter your mail id"
+                  />
+                </div>
               </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
             </div>
             <!--Grid row-->
-          </section>
-        </div>
-  
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-          Made with 💙 by Dhruv, Yasvi, Bhoomika and Vishvas
-        </div>
-        <!-- Copyright -->
-      </footer>
+          </form>
+        </section>
+
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        Made with 💙 by Dhruv, Yasvi, Bhoomika and Vishvas
+      </div>
+      <!-- Copyright -->
+    </footer>
+
 
     <!-- bootstrap js -->
     <script
