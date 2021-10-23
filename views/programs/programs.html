@@ -24,12 +24,8 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
           <ul class=" d-flex align-items-center navbar-nav ml-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="/views/landingPage/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Scholarships</a>
-            </li>
+
+
             <li class="nav-item">
               <a class="nav-link" href="/views/forum/forum.html">Forum</a>
             </li>
@@ -47,7 +43,7 @@
             </form>
           </ul>
           </ul>
-          <div>
+          <div class="d-flex">
             <button type="button" class="btn btn-outline-light mx-2">
               Notifications <span class="badge bg-secondary">4</span>
             </button>
@@ -58,11 +54,21 @@
                 <span class="visually-hidden">unread messages</span>
               </span>
             </button>
-            <a href="../userSpecific/userProfile.html"><button class="btn btn-primary me-4" type="button">
-                John Doe
+            
+            <div>
+              <button class="btn btn-primary me-4 dropdown-toggle"   data-bs-toggle="dropdown" aria-expanded="false" type="button">
+              John Doe
               </button>
-            </a>
-            </a>
+              
+              <ul class="dropdown-menu dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="../userSpecific/userProfile.html">Profile</a></li>
+                <!-- <li><a class="dropdown-item" href="#">Another action before</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+              </ul>
+              
+            </div>
           </div>
         </div>
       </div>
@@ -73,16 +79,7 @@
     <div class="px-4 py-3 my-5 text-center">
       <h1 class="display-5 mt-5 fw-bold" style="color: black;">Programs Related to Computer Science</h1>
       <div class="col-lg-9 mx-auto mt-5">
-        <div class="cardsSection  d-flex flex-wrap justify-content-between">
-          <div class="card text-center my-5">
-            <div class="card-body">
-              <h5 class="card-title" style="color: black;">Computer Science</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae obcaecati unde
-                nulla? Lorem, ipsum dolor. Lorem, ipsum.</p>
-              <p class="card-text">Topic 1 | Topic 2 | Topic 3 | Topic 4 | Topic 5</p>
-              <a href="/views/programs/programInfo.html" class="btn btn-primary">View Details</a>
-            </div>
-          </div>
+
 
           <div class="cardsSection  d-flex flex-wrap justify-content-between">
             <div class="card text-center my-5">

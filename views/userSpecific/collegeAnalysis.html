@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/css/custom.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="user.css" />
+    <link rel="stylesheet" href="uikit.min.css" />
   </head>
   <body>
     <header>
@@ -40,14 +41,8 @@
             <ul
               class="d-flex align-items-center navbar-nav ml-auto mb-2 mb-lg-0"
             >
-              <li class="nav-item">
-                <a class="nav-link active" href="/views/landingPage/index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Scholarships</a>
-              </li>
+
+
               <li class="nav-item">
                 <a class="nav-link" href="/views/forum/forum.html">Forum</a>
               </li>
@@ -72,22 +67,33 @@
               </form>
             </ul>
         </ul>
-        <div>
-          <button type="button" class="btn btn-outline-light mx-2">
-            Notifications <span class="badge bg-secondary">4</span>
-          </button>
-          <button type="button" class="btn btn-outline-light position-relative mx-2 mx-4 ">
-            Inbox
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-              99+
-              <span class="visually-hidden">unread messages</span>
-            </span>
-          </button>
-          <a href="../userSpecific/userProfile.html"><button class="btn btn-primary me-4" type="button">
-            John Doe
-          </button>
-        </a>
-        </div>
+        <div class="d-flex">
+            <button type="button" class="btn btn-outline-light mx-2">
+              Notifications <span class="badge bg-secondary">4</span>
+            </button>
+            <button type="button" class="btn btn-outline-light position-relative mx-2 mx-4 ">
+              Inbox
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+            
+            <div>
+              <button class="btn btn-primary me-4 dropdown-toggle"   data-bs-toggle="dropdown" aria-expanded="false" type="button">
+              John Doe
+              </button>
+              
+              <ul class="dropdown-menu dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="../userSpecific/userProfile.html">Profile</a></li>
+                <!-- <li><a class="dropdown-item" href="#">Another action before</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+              </ul>
+              
+            </div>
+          </div>
           </div>
         </div>
       </nav>
@@ -97,7 +103,27 @@
       <section class="">
         <div class="px-4 py-3 my-5 text-left d-flex">
           <div class="col-lg-9 mt-2 w-100">
-            <!-- Colleges-->
+
+
+            <!--Name card-->
+            <div class="card w-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-baseline">
+                        <h1 class="display-5 fw-bold">John Doe</h1> 
+                        <span style="width: 115px; height: 20px;" class="badge rounded-pill bg-secondary mx-3 badge rounded-pill bg-secondary">Masters Applicant</span>
+                    </div>
+                  <div class="d-flex fs-5">
+                    <p class="card-text">@JohnDoe</p>
+                    
+                     
+                    <ul class="card-text mx-3"><li>Fall 2022</li></ul>
+    
+                  </div>
+    
+                </div>
+              </div>
+
+
             
             <!-- Modal -->
             <div class="modal fade" id="staticBackdropAdd" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -179,98 +205,106 @@
             </div>
             
 
-            <div class="d-flex justify-content-between my-2">
-                <ul class="nav nav-tabs">
-                  <li class="nav-item">
-                    <a  class="nav-link active" aria-current="page"href="./collegeAnalysis.html">Nature of course</a>
-                  </li>
-                  <li class="nav-item">
-                    <a  class="nav-link"  href="./collegeAnalysisScore.html">Based on Score</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./collegeComparison.html">Analysis</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link "  href="./applicationTimeline.html" >Timeline</a>
-                  </li>
-                </ul>
-                <div>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropAdd"> + Add Program</button>
-                  <button type="button" class="btn btn-outline-primary mx-3" data-bs-toggle="modal" data-bs-target="#staticBackdropEdit">Suggest Edits</button>
-                </div>
-                
-              </div>
+            <!--Analysis section-->
+          <div class="card w-100 mt-4">
+            <div class="card-body">
+                <div class="d-flex justify-content-between my-2">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link "  href="./userProfile.html" >Timeline</a>
+                          </li>
+                      <li class="nav-item">
+                        <a  class="nav-link active" aria-current="page"href="./collegeAnalysis.html">Nature of course</a>
+                      </li>
+                      <li class="nav-item">
+                        <a  class="nav-link"  href="./collegeAnalysisScore.html">Based on Score</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./collegeComparison.html">Analysis</a>
+                      </li>
 
-                <table class="table table-bordered align-middle">
-                <thead>
-                  <tr class="table-primary align-middle header">
-                    <th class="tg-0lax"><span style="font-weight:bold">ACRONYM</span></th>
-                    <th class="tg-0lax"><span style="font-weight:bold">College</span></th>
-                    <th class="tg-0lax"><span style="font-weight:bold">Program name</span></th>
-                    <th class="tg-0lax"><span style="font-weight:bold">Contact person</span></th>
-                    <th class="tg-0lax"><span style="font-weight:bold">Link1</span></th>
-                    <th class="tg-0lax"><span style="font-weight:bold">Link 2</span></th>
-                    <th class="tg-0lax"><span style="font-weight:bold">Comments</span></th>
-                    <th class="tg-0lax"><span style="font-weight:bold">Pre Requisites</span></th>
-                    <th class="tg-0lax"><span style="font-weight:bold">Bridge courses</span></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="tg-0lax" rowspan="2">UCI</td>
-                    <td class="tg-0lax" rowspan="2">University of California, Irvine </td>
-                    <td class="tg-0lax"><a href="https://mcs.ics.uci.edu/about/the-program/">Master of Computer Science</a></td>
-                    <td class="tg-0lax"></td>
-                    <td class="tg-0lax"><a href="http://catalogue.uci.edu/informationforprospectivestudents/expensestuitionandfees/#EstimatedExpenses">Link1</a></td>
-                    <td class="tg-0lax"><a href="http://catalogue.uci.edu/donaldbrenschoolofinformationandcomputersciences/departmentofcomputerscience/computerscience_master/#text">Link 2</a></td>
-                    <td class="tg-0lax"> - prepares students for immediate entry into the technology workforce<br><br>- 16 months |&nbsp;&nbsp;four academic quarters, fall to fall + summer internship<br><br>- opportunities to network with tech companies<br><br>- non cs students welcomed<br><br>- on campus living seems to be cheaper here ? Check link 1</td>
-                    <td class="tg-0lax">What prerequisite courses or skills are required for the program?<br><br>Students should have the following:<br>1.&nbsp;&nbsp;A year of programming preferably in Python, C++, or Java; or equivalent or better of professional experience<br>2. Adequate knowledge of and proficiency in C/C++<br>3. Familiarity with discrete mathematics topics such as those covered in ICS 6B and ICS 6D<br>4. Familiarity with linear algebra topics such as those covered in Math 3A or ICS 6N<br>5. Completion of an introductory statistics course<br><br>** Admitted students in the first year of the program should make every effort to take community college classes in the summer to fill holes in their knowledge or to take Coursera or EdX classes. There is an excellent on-line book on Discrete Mathematics offered by Zybooks.</td>
-                    <td class="tg-0lax" rowspan="2"></td>
-                  </tr>
-                  <tr>
-                    <td class="tg-0lax"><a href="https://mswe.ics.uci.edu/">Master of software engineering</a></td>
-                    <td class="tg-0lax"></td>
-                    <td class="tg-0lax"></td>
-                    <td class="tg-0lax"></td>
-                    <td class="tg-0lax">- 15 month program<br><br>- accepts people from different educational background<br><br>- on campus program, spanning from September of the first year to December of the second year.*<br><br>- 1 internship in between which the students are required to secure</td>
-                    <td class="tg-0lax">Applicants must meet the following criteria to be eligible for admission to the MSWE program:<br><br>1. Bachelor’s degree (in any field) or equivalent<br>2. Proficiency in written and spoken English<br>3. Knowledge of data structures, such as lists, arrays, trees, and associative arrays<br>4. Proficiency in two general-purpose programming languages. It does not matter which ones.&nbsp;&nbsp;Projects in MSWE courses involve several programming languages, with <br>5. Python and Java dominating at the moment.</td>
-                  </tr>
-                  <tr>
-                    <td class="tg-0lax"><span style="font-weight:bold;background-color:#FFF">UCSC</span></td>
-                    <td class="tg-0lax">University of California, Santa Cruz </td>
-                    <td class="tg-0lax"><a href="https://ucsc.smartcatalogiq.com/en/Current/General-Catalog/Academic-Units/Baskin-School-of-Engineering/Computer-Science-and-Engineering/Computer-Science-and-Engineering-MS">Computer Science and Engineering M.S.</a></td>
-                    <td class="tg-0lax"></td>
-                    <td class="tg-0lax"></td>
-                    <td class="tg-0lax"><a href="https://grad.soe.ucsc.edu/cse/curriculum">Link</a></td>
-                    <td class="tg-0lax">- Capstone project plan II<br><br>- Capstone Plan II is one year for a full-time student. <br><br>- prepare students in the information technology workforce. <br><br>- not guaranteed any form of financial support from the department</td>
-                    <td class="tg-0lax">Students without adequate academic preparation may be required to take additional courses.<br><br>Recipients of a Master's in Computer Science and Engineering degree at UCSC are expected to have the following characteristics and experiences:<br><br>1. Proficiency with the fundamental knowledge in algorithms, programming languages, and architecture.<br>2. Proficiency with fundamental knowledge in at least one area of research.<br>3. Ability to apply reasoning, problem solving, and technical skills to solve problems with minimal guidance.<br>4. Ability to communicate concepts and results to a technical audience in the form of a technical paper and/or an oral presentation to a review committee.</td>
-                    <td class="tg-0lax"></td>
-                  </tr>
-                  <tr>
-                    <td class="tg-0lax" rowspan="2">UTD</td>
-                    <td class="tg-0lax" rowspan="2">University of Texas at Dallas</td>
-                    <td class="tg-0lax"><a href="https://www.utdallas.edu/fact-sheets/ecs/ms-computer-science/">Master of science in computer science</a></td>
-                    <td class="tg-0lax"></td>
-                    <td class="tg-0lax"></td>
-                    <td class="tg-0lax"></td>
-                    <td class="tg-0lax">24 month program</td>
-                    <td class="tg-0lax"><span style="font-style:normal">Minimum requirements are:</span><br><br><span style="font-style:normal">Bachelor's degree which includes 2 semesters of calculus and 1 semester of linear algebra.</span><br><span style="font-style:normal">A strong foundation in programming.</span><br><span style="font-style:normal">A GPA (grade point average) of at least 3.0 (last 60 semester credit hours). GPA in quantitative courses of at least 3.3.</span><br><span style="font-style:normal">GRE revised scores of 308, 153, 155, and 4 for the combined, verbal, quantitative, and analytical writing components, respectively, are advisable based on our experience with student success in the program.</span><br><span style="font-style:normal">Applicants are admitted on a competitive basis.</span><br><br><span style="font-weight:bold;font-style:normal">Students lacking undergraduate preparation in computer science must complete the courses listed in the link</span><span style="font-style:normal">. At the discretion of the graduate advisor, a diagnostic exam may be required.</span></td>
-                    <td class="tg-0lax"><a href="https://catalog.utdallas.edu/now/graduate/programs/ecs/computer-science#computer-science-ms">Bridge courses</a></td>
-                  </tr>
-                  <tr>
-                    <td class="tg-0lax"><a href="https://www.utdallas.edu/fact-sheets/ecs/ms-software-engineering/">Master of science in software engineering</a></td>
-                    <td class="tg-0lax"></td>
-                    <td class="tg-0lax"></td>
-                    <td class="tg-0lax"></td>
-                    <td class="tg-0lax">- 20 months program</td>
-                    <td class="tg-0lax">The student entering the Computer Science MS program should have an undergraduate preparation equivalent to a baccalaureate in a quantitative science, including calculus and linear algebra. However, special arrangements (requiring more than the minimal number of semester credit hours) can be made for students with good undergraduate preparation in other fields. Minimum requirements are:<br><br>Bachelor's degree which includes 2 semesters of calculus and 1 semester of linear algebra.<br>Strong foundation in programming.<br>A GPA (grade point average) of at least 3.0 (last 60 semester credit hours). GPA in quantitative courses of at least 3.3.<br>GRE revised scores of 308, 153, 155, and 4 for the combined, verbal, quantitative, and analytical writing components, respectively, are advisable based on our experience with student success in the program.</td>
-                    <td class="tg-0lax"></td>
-                  </tr>
-                
-                </tbody>
-                </table>
+                    </ul>
+                    <div>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropAdd"> + Add Program</button>
+                      <button type="button" class="btn btn-outline-primary mx-3" data-bs-toggle="modal" data-bs-target="#staticBackdropEdit">Suggest Edits</button>
+                    </div>
+                    
+                  </div>
+    
+                    <table class="table table-bordered align-middle">
+                    <thead>
+                      <tr class="table-primary align-middle header">
+                        <th class="tg-0lax"><span style="font-weight:bold">ACRONYM</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">College</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Program name</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Contact person</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Link1</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Link 2</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Comments</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Pre Requisites</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Bridge courses</span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-0lax" rowspan="2">UCI</td>
+                        <td class="tg-0lax" rowspan="2">University of California, Irvine </td>
+                        <td class="tg-0lax"><a href="https://mcs.ics.uci.edu/about/the-program/">Master of Computer Science</a></td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax"><a href="http://catalogue.uci.edu/informationforprospectivestudents/expensestuitionandfees/#EstimatedExpenses">Link1</a></td>
+                        <td class="tg-0lax"><a href="http://catalogue.uci.edu/donaldbrenschoolofinformationandcomputersciences/departmentofcomputerscience/computerscience_master/#text">Link 2</a></td>
+                        <td class="tg-0lax"> - prepares students for immediate entry into the technology workforce<br><br>- 16 months |&nbsp;&nbsp;four academic quarters, fall to fall + summer internship<br><br>- opportunities to network with tech companies<br><br>- non cs students welcomed<br><br>- on campus living seems to be cheaper here ? Check link 1</td>
+                        <td class="tg-0lax">What prerequisite courses or skills are required for the program?<br><br>Students should have the following:<br>1.&nbsp;&nbsp;A year of programming preferably in Python, C++, or Java; or equivalent or better of professional experience<br>2. Adequate knowledge of and proficiency in C/C++<br>3. Familiarity with discrete mathematics topics such as those covered in ICS 6B and ICS 6D<br>4. Familiarity with linear algebra topics such as those covered in Math 3A or ICS 6N<br>5. Completion of an introductory statistics course<br><br>** Admitted students in the first year of the program should make every effort to take community college classes in the summer to fill holes in their knowledge or to take Coursera or EdX classes. There is an excellent on-line book on Discrete Mathematics offered by Zybooks.</td>
+                        <td class="tg-0lax" rowspan="2"></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax"><a href="https://mswe.ics.uci.edu/">Master of software engineering</a></td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax">- 15 month program<br><br>- accepts people from different educational background<br><br>- on campus program, spanning from September of the first year to December of the second year.*<br><br>- 1 internship in between which the students are required to secure</td>
+                        <td class="tg-0lax">Applicants must meet the following criteria to be eligible for admission to the MSWE program:<br><br>1. Bachelor’s degree (in any field) or equivalent<br>2. Proficiency in written and spoken English<br>3. Knowledge of data structures, such as lists, arrays, trees, and associative arrays<br>4. Proficiency in two general-purpose programming languages. It does not matter which ones.&nbsp;&nbsp;Projects in MSWE courses involve several programming languages, with <br>5. Python and Java dominating at the moment.</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax"><span style="font-weight:bold;background-color:#FFF">UCSC</span></td>
+                        <td class="tg-0lax">University of California, Santa Cruz </td>
+                        <td class="tg-0lax"><a href="https://ucsc.smartcatalogiq.com/en/Current/General-Catalog/Academic-Units/Baskin-School-of-Engineering/Computer-Science-and-Engineering/Computer-Science-and-Engineering-MS">Computer Science and Engineering M.S.</a></td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax"><a href="https://grad.soe.ucsc.edu/cse/curriculum">Link</a></td>
+                        <td class="tg-0lax">- Capstone project plan II<br><br>- Capstone Plan II is one year for a full-time student. <br><br>- prepare students in the information technology workforce. <br><br>- not guaranteed any form of financial support from the department</td>
+                        <td class="tg-0lax">Students without adequate academic preparation may be required to take additional courses.<br><br>Recipients of a Master's in Computer Science and Engineering degree at UCSC are expected to have the following characteristics and experiences:<br><br>1. Proficiency with the fundamental knowledge in algorithms, programming languages, and architecture.<br>2. Proficiency with fundamental knowledge in at least one area of research.<br>3. Ability to apply reasoning, problem solving, and technical skills to solve problems with minimal guidance.<br>4. Ability to communicate concepts and results to a technical audience in the form of a technical paper and/or an oral presentation to a review committee.</td>
+                        <td class="tg-0lax"></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax" rowspan="2">UTD</td>
+                        <td class="tg-0lax" rowspan="2">University of Texas at Dallas</td>
+                        <td class="tg-0lax"><a href="https://www.utdallas.edu/fact-sheets/ecs/ms-computer-science/">Master of science in computer science</a></td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax">24 month program</td>
+                        <td class="tg-0lax"><span style="font-style:normal">Minimum requirements are:</span><br><br><span style="font-style:normal">Bachelor's degree which includes 2 semesters of calculus and 1 semester of linear algebra.</span><br><span style="font-style:normal">A strong foundation in programming.</span><br><span style="font-style:normal">A GPA (grade point average) of at least 3.0 (last 60 semester credit hours). GPA in quantitative courses of at least 3.3.</span><br><span style="font-style:normal">GRE revised scores of 308, 153, 155, and 4 for the combined, verbal, quantitative, and analytical writing components, respectively, are advisable based on our experience with student success in the program.</span><br><span style="font-style:normal">Applicants are admitted on a competitive basis.</span><br><br><span style="font-weight:bold;font-style:normal">Students lacking undergraduate preparation in computer science must complete the courses listed in the link</span><span style="font-style:normal">. At the discretion of the graduate advisor, a diagnostic exam may be required.</span></td>
+                        <td class="tg-0lax"><a href="https://catalog.utdallas.edu/now/graduate/programs/ecs/computer-science#computer-science-ms">Bridge courses</a></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax"><a href="https://www.utdallas.edu/fact-sheets/ecs/ms-software-engineering/">Master of science in software engineering</a></td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax">- 20 months program</td>
+                        <td class="tg-0lax">The student entering the Computer Science MS program should have an undergraduate preparation equivalent to a baccalaureate in a quantitative science, including calculus and linear algebra. However, special arrangements (requiring more than the minimal number of semester credit hours) can be made for students with good undergraduate preparation in other fields. Minimum requirements are:<br><br>Bachelor's degree which includes 2 semesters of calculus and 1 semester of linear algebra.<br>Strong foundation in programming.<br>A GPA (grade point average) of at least 3.0 (last 60 semester credit hours). GPA in quantitative courses of at least 3.3.<br>GRE revised scores of 308, 153, 155, and 4 for the combined, verbal, quantitative, and analytical writing components, respectively, are advisable based on our experience with student success in the program.</td>
+                        <td class="tg-0lax"></td>
+                      </tr>
+                    
+                    </tbody>
+                    </table>
+    
+                    <button type="button" class="btn btn-outline-secondary">Load More Data ... </button>
+            </div>
+        </div>
 
-                <button type="button" class="btn btn-outline-secondary">Load More Data ... </button>
+
           </div>
         </div>
       </section>

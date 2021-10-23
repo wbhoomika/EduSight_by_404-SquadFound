@@ -94,6 +94,12 @@ body{
     width: 20rem;
 }
 
+.userProfile{
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+}
+
 
 
 /*Forum Style*/

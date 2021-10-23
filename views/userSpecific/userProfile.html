@@ -13,6 +13,8 @@
     />
     <link rel="stylesheet" href="/css/custom.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="user.css" />
+    <link rel="stylesheet" href="uikit.min.css" />
   </head>
   <body>
     <header>
@@ -39,14 +41,8 @@
             <ul
               class="d-flex align-items-center navbar-nav ml-auto mb-2 mb-lg-0"
             >
-              <li class="nav-item">
-                <a class="nav-link active" href="/views/landingPage/index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Scholarships</a>
-              </li>
+
+
               <li class="nav-item">
                 <a class="nav-link" href="/views/forum/forum.html">Forum</a>
               </li>
@@ -71,37 +67,49 @@
               </form>
             </ul>
         </ul>
-        <div>
-          <button type="button" class="btn btn-outline-light mx-2">
-            Notifications <span class="badge bg-secondary">4</span>
-          </button>
-          <button type="button" class="btn btn-outline-light position-relative mx-2 mx-4 ">
-            Inbox
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-              99+
-              <span class="visually-hidden">unread messages</span>
-            </span>
-          </button>
-          <a href="../userSpecific/userProfile.html"><button class="btn btn-primary me-4" type="button">
-            John Doe
-          </button>
-        </a>
-        </div>
+        <div class="d-flex">
+            <button type="button" class="btn btn-outline-light mx-2">
+              Notifications <span class="badge bg-secondary">4</span>
+            </button>
+            <button type="button" class="btn btn-outline-light position-relative mx-2 mx-4 ">
+              Inbox
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+            
+            <div>
+              <button class="btn btn-primary me-4 dropdown-toggle"   data-bs-toggle="dropdown" aria-expanded="false" type="button">
+              John Doe
+              </button>
+              
+              <ul class="dropdown-menu dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="../userSpecific/userProfile.html">Profile</a></li>
+                <!-- <li><a class="dropdown-item" href="#">Another action before</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+              </ul>
+              
+            </div>
+          </div>
           </div>
         </div>
       </nav>
     </header>
 
-    <div class="pageMainContent">
+<!--
+    <div class="userProfile">
       <section class="programsContent userProfile">
         <div class="px-4 py-3 my-5 text-left">
-          <div class="col-lg-9 mx-auto mt-5">
-            <!-- User profile-->
+          <div class="col-lg-12 mx-auto mt-5">
+ 
             <div class="card w-100">
                 <div class="card-body">
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-baseline">
                         <h1 class="display-5 fw-bold">John Doe</h1> 
-                        <span style="width: 100px; height: 20px;" class="badge rounded-pill bg-secondary mx-3 badge rounded-pill bg-secondary">Masters</span>
+                        <span style="width: 115px; height: 20px;" class="badge rounded-pill bg-secondary mx-3 badge rounded-pill bg-secondary">Masters Applicant</span>
                     </div>
                   <div class="d-flex fs-5">
                     <p class="card-text">@JohnDoe</p>
@@ -219,7 +227,258 @@
 
     </div>
 
-    <footer class="bg-dark text-center text-white">
+-->
+<div class="pageMainContent">
+    <section class="">
+      <div class="px-4 py-3 my-5 text-left d-flex">
+        <div class="col-lg-9 mt-2 w-100">
+       
+
+          <!--Name card-->
+          <div class="card w-100">
+            <div class="card-body">
+                <div class="d-flex align-items-baseline">
+                    <h1 class="display-5 fw-bold">John Doe</h1> 
+                    <span style="width: 115px; height: 20px;" class="badge rounded-pill bg-secondary mx-3 badge rounded-pill bg-secondary">Masters Applicant</span>
+                </div>
+              <div class="d-flex fs-5">
+                <p class="card-text">@JohnDoe</p>
+                
+                 
+                <ul class="card-text mx-3"><li>Fall 2022</li></ul>
+
+              </div>
+
+            </div>
+          </div>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdropAdd" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h4 class="modal-title" id="staticBackdropLabel">Add another program</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">College</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected>Choose...</option>
+                              <option value="1">CMU</option>
+                              <option value="2">Northeastern</option>
+                              <option value="3">UTD</option>
+                            </select>
+                          </div>
+
+                          <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Program</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected>Choose...</option>
+                              <option value="1">Masters In Software Engineering</option>
+                              <option value="2">Masters In Computer Science</option>
+                              <option value="3">Masters in Data Science</option>
+                            </select>
+                          </div>
+
+                    </div>
+                    <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Add</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="staticBackdropEdit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h4 class="modal-title" id="staticBackdropLabel">Suggest edits to an existing progam</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">College</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected>Choose...</option>
+                              <option value="1">CMU</option>
+                              <option value="2">Northeastern</option>
+                              <option value="3">UTD</option>
+                            </select>
+                          </div>
+
+                          <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Program</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected>Choose...</option>
+                              <option value="1">Masters In Software Engineering</option>
+                              <option value="2">Masters In Computer Science</option>
+                              <option value="3">Masters in Data Science</option>
+                            </select>
+                          </div>
+
+                          <div class="input-group">
+                            <span class="input-group-text">Suggestion</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                          </div>
+                    </div>
+                    <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Submit</button>
+                    </div>
+                </div>
+                </div>
+            </div>          
+
+          <!--Analysis section-->
+          <div class="card w-100 mt-4">
+            <div class="card-body">
+                
+          <div class="d-flex justify-content-between my-2">
+            <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page"  href="./applicationTimeline.html" >Timeline</a>
+            </li>
+              <li class="nav-item">
+                <a  class="nav-link"  href="./collegeAnalysis.html">Nature of course</a>
+              </li>
+              <li class="nav-item">
+                <a  class="nav-link"  href="./collegeAnalysisScore.html">Based on Score</a>
+              </li>
+              <li class="nav-item">
+                <a  class="nav-link" href="./collegeComparison.html">Analysis</a>
+              </li>
+
+            </ul>
+            <div>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropAdd"> + Add Program</button>
+              <button type="button" class="btn btn-outline-primary mx-3" data-bs-toggle="modal" data-bs-target="#staticBackdropEdit">Suggest Edits</button>
+            </div>
+            
+          </div>
+
+          <div class="uk-container uk-padding">
+            <div class="uk-timeline">
+              <div class="uk-timeline-item">
+                <div class="uk-timeline-icon">
+                  <span class="uk-badge"><span style="font-size: 20px;" uk-icon="check">✓</span></span>
+                </div>
+                <div class="uk-timeline-content">
+                  <div
+                    class="
+                      uk-card
+                      uk-card-default
+                      uk-margin-medium-bottom
+                      uk-overflow-auto
+                    "
+                  >
+                    <div class="uk-card-header">
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <h3 class="uk-card-title">
+                          <time datetime="2020-07-08">July 8</time>
+                        </h3>
+                        <span class="uk-label uk-label-success uk-margin-auto-left"
+                          >Feature</span
+                        >
+                      </div>
+                    </div>
+                    <div class="uk-card-body">
+                      <p class="uk-text-success">
+                        Fully responsive timeline you can add to your UIkit 3
+                        project
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-timeline-item">
+                <div class="uk-timeline-icon">
+                  <span class="uk-badge"><span style="font-size: 20px;" uk-icon="check">✓</span></span>
+                </div>
+                <div class="uk-timeline-content">
+                  <div
+                    class="
+                      uk-card
+                      uk-card-default
+                      uk-margin-medium-bottom
+                      uk-overflow-auto
+                    "
+                  >
+                    <div class="uk-card-header">
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <h3 class="uk-card-title">
+                          <time datetime="2020-07-07">July 7</time>
+                        </h3>
+                        <span class="uk-label uk-label-warning uk-margin-auto-left"
+                          >Test</span
+                        >
+                      </div>
+                    </div>
+                    <div class="uk-card-body">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-timeline-item">
+                <div class="uk-timeline-icon">
+                  <span class="uk-badge" style="background-color: gray;" ></span>
+                </div>
+                <div class="uk-timeline-content">
+                  <div
+                    class="
+                      uk-card
+                      uk-card-default
+                      uk-margin-medium-bottom
+                      uk-overflow-auto
+                    "
+                  >
+                    <div class="uk-card-header">
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <h3 class="uk-card-title">
+                          <time datetime="2020-07-06">July 6</time>
+                        </h3>
+                        <span class="uk-label uk-label-danger uk-margin-auto-left"
+                          >Fix</span
+                        >
+                      </div>
+                    </div>
+                    <div class="uk-card-body">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt.
+                      </p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-outline-secondary">Load More Data ... </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            </div>
+        </div>
+
+              
+        </div>
+      </div>
+    </section>
+
+  </div>    
+
+<footer class="bg-dark text-center text-white">
         <!-- Grid container -->
         <div class="container p-4">
           <section class="mb-4">
