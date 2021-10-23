@@ -13,6 +13,19 @@ body{
 }
 
 
+<<<<<<< HEAD
+.blog1 {
+    color: black;
+    background: #fcfcfc;
+    border: 1px solid saddlebrown;
+    border-radius: 5px;
+}
+
+.blog1 h1 {
+    color: white;
+    background-color: #161616;
+}
+=======
 /* footer{
     position: fixed;
     width: 100vw;
@@ -20,6 +33,7 @@ body{
     padding-right: 10px;
     z-index: 10;
 } */
+>>>>>>> b46a94b3ffb03031114f745404b47d6fa66fd702
 
 
 /* Cards css */
